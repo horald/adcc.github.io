@@ -15,13 +15,6 @@
 .leaflet-layer { /* TODO optimize classes */
 	position: absolute;
 	}
-	
-/* Default icon URLs */
-.leaflet-default-icon-path {
-	background-image: url(images/marker-icon.png);
-	}
-	
-	
 .leaflet-container {
 	overflow: hidden;
 	outline: 0;

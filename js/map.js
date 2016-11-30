@@ -42,7 +42,7 @@ function addr_search() {
     $.getJSON('https://nominatim.openstreetmap.org/search?format=json&limit=5&q=' + inp.value, function(data) {
         var items = [];
 
-alert('suche:'+inp.value);
+//alert('suche:'+inp.value);
         $.each(data, function(key, val) {
             bb = val.boundingbox;
             items.push("<li><a href='#' onclick='chooseAddr(" + bb[0] + ", " + bb[2] + ", " + bb[1] + ", " + bb[3]  + ", \"" + val.osm_type + "\");return false;'>" + val.display_name + '</a></li>');
